@@ -25,6 +25,7 @@ public class CourseController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @GetMapping
     public ResponseEntity<?> getAllCourses(){
         return  ResponseEntity.ok(courseService.listCourses());
     }
